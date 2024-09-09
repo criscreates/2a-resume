@@ -1,0 +1,241 @@
+%-------------------------
+% Resume in LaTeX
+% Author : Cristian Moretto
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+\setlength{\footskip}{5pt}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+%   \textbf{\href{http://sourabhbajaj.com/}{\Large Sourabh Bajaj}} & Email : \href{mailto:sourabh@sourabhbajaj.com}{sourabh@sourabhbajaj.com}\\
+%   \href{http://sourabhbajaj.com/}{http://www.sourabhbajaj.com} & Mobile : +1-123-456-7890 \\
+% \end{tabular*}
+
+\begin{center}
+    \textbf{\Huge Cristian Moretto} \\ \vspace{1pt}
+    \small \faPhoneSquare \hspace{0cm} 647-617-0415 $|$ \href{mailto:cmoretto@uwaterloo.ca}{\faEnvelope \hspace{0cm} \underline{cmoretto@uwaterloo.ca}} $|$ 
+    \href{https://linkedin.com/in/cristian-moretto}{\faLinkedinSquare \hspace{0cm} \underline{\smash{linkedin.com/in/cristian-moretto}}} $|$
+    \href{https://github.com/criscreates}{\faGithub \hspace{0cm} \underline{\smash{github.com/criscreates}}}
+\end{center}
+
+  %-----------PROGRAMMING SKILLS-----------
+  \section{Skills}
+  \begin{itemize}[leftmargin=0.15in, label={}]
+     \small{\item{
+      \textbf{Languages \& Technologies}{: JavaScript, Python, Racket, C, HTML/CSS, LaTeX, Keras, Git, SQL, Linux, MS Office} \\
+      \textbf{Certifications \& Additional Training}{: Standard First Aid With CPR-C, Swim Instructor, Bronze Cross} \\
+     }}
+  \end{itemize}
+ 
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {University of Waterloo}{Sep. 2023 -- May 2028}
+      {Bachelor of Computer Science, 3.90 GPA (1B Term)}{Waterloo, ON} \\
+      \resumeItemListStart
+        \resumeItem{\textbf{Relevant Coursework}: Designing Functional Programs, Elementary Algorithm Design \& Data Abstraction, Tools \& Techniques for Software Development}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+
+%-----------RESEARCH & PROJECTS-----------
+\section{Research \& Projects}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {\textbf{IB Computer Science Extended Essay} $|$ \emph{Python, TensorFlow, Keras, Matplotlib} \hspace{0cm} \href{https://github.com/criscreates/extendedessay/blob/main/Cristian_M_Extended_Essay.pdf}{\faGithub}}{Feb. 2022 -- March 2023}
+          \resumeItemListStart
+            \resumeItem{Wrote a 4000 word research essay exploring the effect of convolutional neural network architecture on efficiency}
+            \resumeItem{Referenced 10 academic sources to support findings and clearly communicate abstract concepts to readers}
+            \resumeItem{Trained a multi-layered CNN model to classify images from four MNIST datasets with over 99\% accuracy}
+            \resumeItem{Visualized model performance using Matplotlib and analyzed the effect of 64 structural variations}
+          \resumeItemListEnd
+      \resumeProjectHeading
+          {\textbf{2D Platformer} $|$ \emph{Python, PyGame, PyCharm, SDL} \hspace{0cm} \href{https://github.com/criscreates/2dplatformer}{\faGithub}}{Oct. 2021 -- Dec. 2021}
+          \resumeItemListStart
+            \resumeItem{Developed a 2D platforming game with an engine that supports collision detection, animations, and custom levels}
+            \resumeItem{Implemented a UI, dynamically scrolling camera, responsive handling of player inputs, and invincibility frames}
+          \resumeItemListEnd
+    \resumeSubHeadingListEnd
+
+%-----------EXTRACURRICULARS-----------
+\section{Extracurriculars}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {First-Year Representative \& S24 Elections Committee Member}{Oct. 2023 -- present}
+      {The Mathematics Society of the University of Waterloo}{Waterloo, ON}
+      \resumeItemListStart
+        \resumeItem{Consulted first-year Math faculty students and represented their opinions at council meetings}
+        \resumeItem{Proposed and executed study sessions to foster student engagement, regularly attracting over 100 students}
+        \resumeItem{Promoted council events and initiatives on social media, and demonstrated transparency through written reports}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Event Organizer}{Sep. 2022 -- June 2023}
+      {Cardinal Carter CHS Student Council, Prom Committee}{Aurora, ON}
+      \resumeItemListStart
+        \resumeItem{Planned and executed 7 school-wide events, including semi-formal and prom}
+        \resumeItem{Used Microsoft Excel to manage event logistics, including ticket sales and the information of over 450 students}
+        \resumeItem{Communicated frequently with students, teachers, and administration to ensure events ran smoothly}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Communications Chair}{Sep. 2021 -- June 2023}
+      {Carter Blue (Mental Health Awareness Club)}{Aurora, ON}
+      \resumeItemListStart
+        \resumeItem{Managed the club's social media accounts and promoted events to students, designing \& making over 20 posts}
+        \resumeItem{Liaised with 3 other student organizations to ensure inclusivity and maximize event attendance}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+%
+
+%-----------PROFESSIONAL EXPERIENCE-----------
+\section{Professional Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Swim Instructor \& Assistant Lifeguard}{July 2023 -- Sep. 2023}
+      {Splashville}{Vaughan, ON}
+      \resumeItemListStart
+        \resumeItem{Delivered individual and group swim lessons to students from ages 2-30 alongside a team of 14 instructors}
+        \resumeItem{Maintained open communication with over 30 parents, supervisors, and coworkers}
+        \resumeItem{Adapted a swim curriculum and facilitated student growth through encouragement and technical instruction}
+      \resumeItemListEnd
+      
+% -----------Multiple Positions Heading-----------
+%    \resumeSubSubheading
+%     {Software Engineer I}{Oct 2014 - Sep 2016}
+%     \resumeItemListStart
+%        \resumeItem{Apache Beam}
+%          {Apache Beam is a unified model for defining both batch and streaming data-parallel processing pipelines}
+%     \resumeItemListEnd
+%    \resumeSubHeadingListEnd
+%-------------------------------------------
+
+    \resumeSubheading
+      {Swim \& Lifesaving Instructor}{July 2022 -- Sep. 2023}
+      {Azure Swim School (Personal Business)}{Nobleton, ON}
+      \resumeItemListStart
+        \resumeItem{Organized and delivered individualized and small-group swim lessons in 7 clients' backyard pools}
+        \resumeItem{Communicated professionally with clients on a daily basis to schedule lessons and manage payments}
+        \resumeItem{Inspired students' passions for water safety while maintaining an engaging and supportive learning environment}
+    \resumeItemListEnd
+
+    \resumeSubheading
+      {Swim Instructor \& Deck Supervisor}{July 2021 -- Aug. 2022}
+      {KC Swim School}{Caledon, ON}
+      \resumeItemListStart
+        \resumeItem{Taught private and semi-private swim lessons, and supervised pool activities along with one other instructor}
+        \resumeItem{Adapted to three teaching environments and enforced workplace safety protocols}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+%-------------------------------------------
+\end{document}
