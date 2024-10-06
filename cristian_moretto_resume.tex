@@ -32,7 +32,9 @@
 % serif
 % \usepackage{CormorantGaramond}
 % \usepackage{charter}
-
+\usepackage{fouriernc}
+\renewcommand{\familydefault}{\rmdefault}
+% fonts I'm choosing between are: Computer Modern, Fourier, New Century Schoolbook.
 
 \pagestyle{fancy}
 \fancyhf{} % clear all header and footer fields
@@ -124,8 +126,8 @@
   \section{Skills}
   \begin{itemize}[leftmargin=0.15in, label={}]
      \small{\item{
-      \textbf{Programming Languages}{: C, C++, Python, Java, SQL, Racket, JavaScript} \\
-      \textbf{Technologies \& Developer Tools}{: HTML/CSS, Keras, TensorFlow, Matplotlib, Oracle SQL, Linux, Git, Excel, JIRA} \\
+      \textbf{Programming Languages}{: C, C++, Python, Java, SQL, JavaScript, Racket} \\
+      \textbf{Technologies \& Developer Tools}{: HTML/CSS, Keras, TensorFlow, Pandas, Matplotlib, Linux, Git, Excel, JIRA} \\
      }}
   \end{itemize}
  
@@ -135,7 +137,7 @@
   \resumeSubHeadingListStart
     \resumeSubheading
       {University of Waterloo}{Sep. 2023 -- May 2028}
-      {Bachelor of Computer Science, 3.87 GPA (2A Term)}{Waterloo, ON} \\
+      {Bachelor of Computer Science, 3.87 GPA}{Waterloo, ON} \\
       \resumeItemListStart
         \resumeItem{\textbf{Relevant Coursework}: Object-Oriented Software Development, Elementary Algorithm Design \& Data Abstraction, Tools \& Techniques for Software Development, Logic and Computation}
       \resumeItemListEnd
@@ -146,15 +148,15 @@
   \resumeSubHeadingListStart
 
     \resumeSubheading
-      {Software Developer (Co-op)}{May 2024 -- Aug. 2024}
+      {Software Developer Intern}{May 2024 -- Aug. 2024}
       {Independent Electricity System Operator}{Oakville, ON}
       \resumeItemListStart
         \resumeItem{Developed a Java web application for management of generation contracts, reducing manual data entry by 35\%}
         \resumeItem{Proposed, tested, and implemented an Oracle SQL database architecture that halved required data operations}
-        \resumeItem{Abstracted pessimistic locking logic and UIs to ensure data integrity and reduce code volume by 54\%}
+        \resumeItem{Abstracted pessimistic locking logic with Java methods to ensure data integrity and reduce code volume by 54\%}
         \resumeItem{Spearheaded creation of a team knowledge hub, documenting best practices and specifications across 40 apps}
-        \resumeItem{Collaborated with 30 Agile developers, testers, and business analysts, completing 4 user stories per sprint}
         \resumeItem{Integrated RESTful APIs to automate application health checks and reduce support ticket response time by 25\%}
+        \resumeItem{Collaborated with 30 Agile developers, testers, and business analysts, completing 4 user stories per sprint}
       \resumeItemListEnd
 
     \resumeSubheading
@@ -189,12 +191,12 @@
             \resumeItem{Composed a 4000 word research essay exploring the effect of convolutional neural network architecture on efficiency}
             \resumeItem{Referenced 10 academic sources to support findings and clearly communicate abstract concepts to readers}
             \resumeItem{Trained a multi-layered CNN model to classify images from four MNIST datasets with over 99\% accuracy}
-            \resumeItem{Visualized computer vision model performance using Matplotlib and analyzed the effect of 64 structural variations}
+            \resumeItem{Graphed computer vision model performance using Matplotlib and analyzed the effect of 64 structural variations}
           \resumeItemListEnd
       \resumeProjectHeading
           {\textbf{2D Platformer} $|$ \emph{Python, PyGame, PyCharm, OpenGL} \hspace{0cm} \href[pdfnewwindow=true]{https://github.com/criscreates/2dplatformer}{\faGithub}}{Oct. 2021 -- Dec. 2021}
           \resumeItemListStart
-            \resumeItem{Developed a 2D platforming game with an engine that supports collision detection, animations, and custom levels}
+            \resumeItem{Developed a custom 2D platforming game engine that supports collision detection, animations, and level maps}
             \resumeItem{Implemented a UI, dynamically scrolling camera, responsive handling of player inputs, and invincibility frames}
           \resumeItemListEnd
     \resumeSubHeadingListEnd
@@ -204,7 +206,7 @@
   \resumeSubHeadingListStart
 
     \resumeSubheading
-      {Computer Science Representative \& Elections Committee Member}{Oct. 2023 -- present}
+      {Computer Science Representative \& Elections Committee Member}{Oct. 2023 -- Present}
       {The Mathematics Society of the University of Waterloo}{Waterloo, ON}
       \resumeItemListStart
         \resumeItem{Consulted computer science \& first-year Math faculty students and represented their opinions at council meetings}
